@@ -1,0 +1,28 @@
+/*Estilos del header*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: $align-items;
+  background-color: $bg-color;
+  padding: $padding-2;
+
+  img {
+    width: $width;
+  }
+
+  ul {
+    display: flex;
+    list-style: $list-style;
+  }
+
+  a {
+    text-decoration: $text-decoration;
+    color: $color;
+    font-size: $font-size;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@import 'variables';
+@import 'globals';
+@import 'header';
+
+@mixin format($color, $padding) {
+  padding: $padding;
+  background-color: $color;
+}
+
+@function percentage($value, $porcentaje) {
+  $resultado: ($value * $porcentaje) / 100;
+
+  @return $resultado;
+}
+
+
+body {
+  padding: #{percentage(10, 100)}px;
+}
+
+header li {
+  @include format(rgb(240, 160, 160), 20px);
+}
